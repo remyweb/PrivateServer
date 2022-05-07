@@ -1,0 +1,26 @@
+[
+    {
+        "ip":"127.0.0.1",
+        "password":"",
+        "role":"ADMIN",
+        "name":"Local Administrator"
+    },
+    {
+        "ip":"127.0.0.1",
+        "password":"",
+        "role":"MODER",
+        "name":"Local Moderator"
+    },
+    {
+        "ip":"127.0.0.1",
+        "password":"",
+        "role":"USER",
+        "name":"Local User"
+    },
+    {
+        "ip":"127.0.0.1",
+        "password":"443x8080",
+        "role":"George",
+        "name":"Local Administrator"
+    }
+]

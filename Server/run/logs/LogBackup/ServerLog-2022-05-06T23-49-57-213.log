@@ -1,0 +1,872 @@
+=== Started 2022-05-06T22-53-26-116 ===
+[INFO ][22:53:26] 418 bad words loaded
+[WARN ][22:53:26] User account "Local Administrator" disabled
+[WARN ][22:53:26] User account "Local Moderator" disabled
+[WARN ][22:53:26] User account "Local User" disabled
+[INFO ][22:53:26] 0 user records loaded.
+[INFO ][22:53:26] 0 IP ban records loaded.
+[INFO ][22:53:26] [1m[32mMultiOgar-Edited 1.6.1[37m - An open source multi-protocol ogar server[0m
+[INFO ][22:53:26] WebSocket: ws
+[INFO ][22:53:26] Started stats server on port 88
+[INFO ][22:53:26] Listening on port 443
+[INFO ][22:53:26] Current game mode is Free For All
+[NONE ][22:53:26]   __  __       _ _   _  ___                        _____    _ _ _           _    _   __    _ 
+ |  \/  |_   _| | |_(_)/ _ \  __ _  __ _ _ __     | ____|__| (_) |_ ___  __| |  / | / /_  / |
+ | |\/| | | | | | __| | | | |/ _` |/ _` | '__|____|  _| / _` | | __/ _ \/ _` |  | || '_ \ | |
+ | |  | | |_| | | |_| | |_| | (_| | (_| | | |_____| |__| (_| | | ||  __/ (_| |  | || (_) || |
+ |_|  |_|\__,_|_|\__|_|\___/ \__, |\__,_|_|       |_____\__,_|_|\__\___|\__,_|  |_(_)___(_)_|
+                             |___/                                                           
+[NONE ][22:55:43] CONNECTED 127.0.0.1:65229, origin: "https://agar.io"
+[NONE ][22:56:56] CONNECTED 127.0.0.1:65334, origin: "null"
+[NONE ][22:57:26] >playerid
+[WARN ][22:57:26] Invalid Command!
+[NONE ][22:57:28] >id
+[WARN ][22:57:28] Invalid Command!
+[NONE ][22:57:30] >help
+[NONE ][22:57:30]                        ┌────────────────────────────┐                       
+                       │ LIST OF AVAILABLE COMMANDS │                       
+┌──────────────────────┴────────────────────────────┴──────────────────────┐
+│                         ----Players and AI----                           │
+│                                                                          │
+│ playerlist                   │ Get list of players, bots, ID's, etc      │
+│ minion [PlayerID] [#] [name] │ Adds suicide minions to the server        │
+│ addbot [number]              │ Adds bots to the server                   │
+│ kickbot [number]             │ Kick a number of bots - No value= all gone│
+│ kick [PlayerID]              │ Kick player or bot by client ID           │
+│ kickall                      │ Kick all players and bots                 │
+│ kill [PlayerID]              │ Kill the player by client ID              │
+│ killall                      │ Kills everyone                            │
+│                                                                          │
+│                          ----Player Commands----                         │
+│                                                                          │
+│ spawn [entity] [pos] [mass]  │ Spawns an entity                          │
+│ mass [PlayerID] [mass]       │ Set cell(s) mass by client ID             │
+│ merge [PlayerID]             │ Merge all client's cells                  │
+│ spawnmass [PlayerID] [mass]  │ Sets a player's spawn mass                │
+│ freeze [PlayerID]            │ Freezes a player                          │
+│ speed [PlayerID]             │ Sets a player's base speed                │
+│ color [PlayerID] [R] [G] [B] │ Set cell(s) color by client ID            │
+│ name [PlayerID] [name]       │ Change cell(s) name by client ID          │
+│ skin [PlayerID] [string]     │ Change cell(s) skin by client ID          │
+│ rec [PlayerID]               │ Gives a player instant-recombine + more   │
+│ split [PlayerID] [Amount]    │ Forces a player to split                  │
+│ tp [X] [Y]                   │ Teleports player(s) to XY coordinates     │
+│ replace [PlayerID] [entity]  │ Replaces a player with an entity          │
+│ pop [PlayerID]               │ Pops a player with a virus                │
+| explode [PlayerID]           | Explodes a player into ejected mass       |
+│                                                                          │
+│                          ----Server Commands----                         │
+│                                                                          │
+│ pause                        │ Pause game, freeze all nodes              │
+│ board [string] [string] ...  │ Set scoreboard text                       │
+│ change [setting] [value]     │ Change specified settings                 │
+│ reload                       │ Reload config, banlist, and role files    │
+│ ban [PlayerID │ IP]          │ Bans a player(s) IP                       │
+│ unban [IP]                   │ Unbans an IP                              │
+│ banlist                      │ Get list of banned IPs.                   │
+│ mute [PlayerID]              │ Mute player from chat by client ID        │
+│ unmute [PlayerID]            │ Unmute player from chat by client ID      │
+| lms                          | Starts/ends last man standing             |
+| chat                         | Sends a server message to all clients     |
+│                                                                          │
+│                          ----Miscellaneous----                           │
+│                                                                          │
+│ clear                        │ Clear console output                      │
+│ reset                        │ Removes all nodes and reimplement them    │
+│ status                       │ Get server status                         │
+│ debug                        │ Get/check node lengths                    │
+│ exit                         │ Stops the server                          │
+│ calc                         │ Get size/mass from a specified value      │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│         Psst! Do "shortcuts" for a list of command shortcuts!            │
+└──────────────────────────────────────────────────────────────────────────┘
+[NONE ][22:57:36] >playerlist
+[NONE ][22:57:36] 
+Current players: 2
+[NONE ][22:57:36] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][22:57:36]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][22:57:36] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][22:57:36]       1 | 127.0.0.1       | ? | [CONNECTING]
+[NONE ][22:57:36]       2 | 127.0.0.1       | 5 |     1 |     12 | -7053,  7053 | An unnamed cell
+[NONE ][22:58:14] DISCONNECTED 127.0.0.1:65229, code: 1001, reason: "", name: ""
+[NONE ][22:58:28] >mass 2 12000
+[NONE ][22:58:28] Set mass of An unnamed cell to 12000.000
+[NONE ][22:58:41] >minion 2 10 K
+[NONE ][22:58:41] Added 10 minions for An unnamed cell
+[NONE ][23:01:35] >mass 2 21000
+[NONE ][23:01:35] Set mass of Geo? :V to 21000.000
+[NONE ][23:04:54] CONNECTED 127.0.0.1:65389, origin: "null"
+[NONE ][23:05:15] >playerlist
+[NONE ][23:05:15] 
+Current players: 12
+[NONE ][23:05:15] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:05:15]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:05:15] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:05:15]       2 | 127.0.0.1       | 5 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:05:15]      13 | 127.0.0.1       | 5 |     1 |     31 |  6155,  7042 | Sou foda orra  
+[NONE ][23:05:18] >mass 13 25000
+[NONE ][23:05:18] Set mass of Sou foda orra to 25000.000
+[NONE ][23:05:26] >minion 13 20
+[NONE ][23:05:26] Added 20 minions for Sou foda orra
+[NONE ][23:05:28] >addbot 15
+[NONE ][23:05:28] Added 15 player bots
+[NONE ][23:08:27] CONNECTED 127.0.0.1:65437, origin: "http://cigar2.glitch.me"
+[NONE ][23:08:44] >playerlist
+[NONE ][23:08:44] 
+Current players: 48
+[NONE ][23:08:44] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:08:44]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:08:44] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:08:44]       2 | 127.0.0.1       | 5 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:08:44]      13 | 127.0.0.1       | 5 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:08:44]      34 | [BOT]           | ? |     1 |     30 |  1801,   802 | 💕─ LϋJi ─💖   
+[NONE ][23:08:44]      35 | [BOT]           | ? |     2 |     55 |  -851,  -234 | che            
+[NONE ][23:08:44]      36 | [BOT]           | ? |     1 |     26 |  5086,   -41 | Ultra-[???]    
+[NONE ][23:08:44]      37 | [BOT]           | ? |     2 |     78 |  2987, -3421 | 【Řβ】 Ruβιηh⊕🔫 
+[NONE ][23:08:44]      38 | [BOT]           | ? |     8 |    704 |  -204,  -591 | El kevin       
+[NONE ][23:08:44]      39 | [BOT]           | ? |     1 |     32 |  5489,  1008 | ζ͜͡҈Šȶ༻ℱlŁᗰŻỖήᗴ
+[NONE ][23:08:44]      40 | [BOT]           | ? |     1 |     10 |  2683, -1590 | [ MG ] kaden   
+[NONE ][23:08:44]      41 | [BOT]           | ? |     8 |    633 |   166,    -8 | ღℱℛᵀᴹ--༺𝓢pooky
+[NONE ][23:08:44]      42 | [BOT]           | ? |     1 |     17 | -2521,  2325 | 🈯Basic        
+[NONE ][23:08:44]      43 | [BOT]           | ? |    16 |   2296 |   336,  -147 | {{{{ASLEY}}}}  
+[NONE ][23:08:44]      44 | [BOT]           | ? |     5 |    109 |  -314,   328 | Sowy           
+[NONE ][23:08:44]      45 | [BOT]           | ? |     2 |     41 |    90, -2902 | GÜŠTAVÖ        
+[NONE ][23:08:44]      46 | [BOT]           | ? |     4 |    115 |  1014,  -860 | ☢优𝓒ℓαssy雅☢    
+[NONE ][23:08:44]      47 | [BOT]           | ? |     4 |    212 |  1261,  1031 | ⚔ƁᙈββŁΣßΛĻŽ༻Ɣ  
+[NONE ][23:08:44]      48 | [BOT]           | ? |     2 |     49 |   498,   320 | 計»𝔣𝔯𝔞𝔫𝔠𝔬煵
+[NONE ][23:08:44]      49 | 127.0.0.1       | 6 |     1 |     13 | -3864,  7052 | {doge}         
+[NONE ][23:08:48] >mass 49 250000
+[NONE ][23:08:48] Set mass of {doge} to 250000.000
+[NONE ][23:09:02] >mass 49 1000
+[NONE ][23:09:02] Set mass of {doge} to 1000.000
+[NONE ][23:09:08] >minion 49 300
+[NONE ][23:09:08] Added 300 minions for {doge}
+[NONE ][23:12:48] DISCONNECTED 127.0.0.1:65334, code: 1000, reason: "Connection timeout", name: "Geo? :V"
+[NONE ][23:12:48] DISCONNECTED 127.0.0.1:65389, code: 1000, reason: "Connection timeout", name: "Sou foda orra"
+[NONE ][23:16:06] CONNECTED 127.0.0.1:49324, origin: "http://127.0.0.1:5500"
+[NONE ][23:16:27] >playerlist
+[NONE ][23:16:27] 
+Current players: 317
+[NONE ][23:16:27] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:16:27]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:16:27] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:16:27]      34 | [BOT]           | ? |     8 |    430 |   514,   520 | 💕─ LϋJi ─💖   
+[NONE ][23:16:27]      35 | [BOT]           | ? |     1 |     16 | -6990,  1687 | che            
+[NONE ][23:16:27]      36 | [BOT]           | ? |    12 |   2288 |   136,  -372 | Ultra-[???]    
+[NONE ][23:16:27]      37 | [BOT]           | ? |     8 |    643 |  -804,  -576 | 【Řβ】 Ruβιηh⊕🔫 
+[NONE ][23:16:27]      38 | [BOT]           | ? |     6 |  13499 |  -633,  -301 | El kevin       
+[NONE ][23:16:27]      39 | [BOT]           | ? |     5 |    111 |  -714,  -827 | ζ͜͡҈Šȶ༻ℱlŁᗰŻỖήᗴ
+[NONE ][23:16:27]      40 | [BOT]           | ? |     9 |    737 |  -277,   507 | [ MG ] kaden   
+[NONE ][23:16:27]      41 | [BOT]           | ? |     6 |    161 |    69,  -998 | ღℱℛᵀᴹ--༺𝓢pooky
+[NONE ][23:16:27]      42 | [BOT]           | ? |     5 |    127 |   424,   641 | 🈯Basic        
+[NONE ][23:16:27]      43 | [BOT]           | ? |     9 |    690 |  -236,  -390 | {{{{ASLEY}}}}  
+[NONE ][23:16:27]      44 | [BOT]           | ? |     8 |   2828 |  -110,   392 | Sowy           
+[NONE ][23:16:27]      45 | [BOT]           | ? |    13 |   4229 |  -473,  -330 | GÜŠTAVÖ        
+[NONE ][23:16:27]      46 | [BOT]           | ? |     9 |    324 |  -653,   185 | ☢优𝓒ℓαssy雅☢    
+[NONE ][23:16:27]      47 | [BOT]           | ? |     8 |  17760 |   158,  -242 | ⚔ƁᙈββŁΣßΛĻŽ༻Ɣ  
+[NONE ][23:16:27]      48 | [BOT]           | ? |     8 |   1785 |   481,   348 | 計»𝔣𝔯𝔞𝔫𝔠𝔬煵
+[NONE ][23:16:27]      49 | 127.0.0.1       | 6 |     2 |  22143 | -1965, -3293 | {doge}         
+[NONE ][23:16:27]     350 | 127.0.0.1       | 6 | -----------------------------SPECTATING: {doge}
+[NONE ][23:16:41] >mass 350 5000
+[NONE ][23:16:41] Set mass of TEST to 5000.000
+[NONE ][23:16:44] >minion 350 10
+[NONE ][23:16:44] Added 10 minions for TEST
+[NONE ][23:18:08] DISCONNECTED 127.0.0.1:49324, code: 1006, reason: "", name: "TEST"
+[NONE ][23:20:29] CONNECTED 127.0.0.1:49395, origin: "http://127.0.0.1:5500"
+[NONE ][23:25:21] DISCONNECTED 127.0.0.1:49395, code: 1006, reason: "", name: ""
+[NONE ][23:25:21] CONNECTED 127.0.0.1:49417, origin: "http://127.0.0.1:5500"
+[NONE ][23:25:28] CONNECTED 127.0.0.1:49424, origin: "http://127.0.0.1:5500"
+[NONE ][23:25:42] DISCONNECTED 127.0.0.1:49424, code: 1001, reason: "", name: "An unnamed cell"
+[NONE ][23:25:42] CONNECTED 127.0.0.1:49430, origin: "http://127.0.0.1:5500"
+[NONE ][23:25:52] DISCONNECTED 127.0.0.1:49430, code: 1001, reason: "", name: "An unnamed cell"
+[NONE ][23:25:52] CONNECTED 127.0.0.1:49436, origin: "http://127.0.0.1:5500"
+[NONE ][23:26:02] >playerlist
+[NONE ][23:26:02] 
+Current players: 318
+[NONE ][23:26:02] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:26:02]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:26:02] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:26:02]      34 | [BOT]           | ? |    14 |   2465 |   -86,   -75 | 💕─ LϋJi ─💖   
+[NONE ][23:26:02]      35 | [BOT]           | ? |     9 |    215 |   187,  -315 | che            
+[NONE ][23:26:02]      36 | [BOT]           | ? |     8 |    303 |   702,    48 | Ultra-[???]    
+[NONE ][23:26:02]      37 | [BOT]           | ? |     8 |    186 |   322,  -765 | 【Řβ】 Ruβιηh⊕🔫 
+[NONE ][23:26:02]      38 | [BOT]           | ? |     3 |     60 |   510,    81 | El kevin       
+[NONE ][23:26:02]      39 | [BOT]           | ? |     9 |    272 |     2,  -397 | ζ͜͡҈Šȶ༻ℱlŁᗰŻỖήᗴ
+[NONE ][23:26:02]      40 | [BOT]           | ? |    12 |    791 |  -514,   570 | [ MG ] kaden   
+[NONE ][23:26:02]      41 | [BOT]           | ? |     9 |  10030 |   335,   -91 | ღℱℛᵀᴹ--༺𝓢pooky
+[NONE ][23:26:02]      42 | [BOT]           | ? |     2 |     47 |  2525,     5 | 🈯Basic        
+[NONE ][23:26:02]      43 | [BOT]           | ? |    15 |   4419 |   -23,  -118 | {{{{ASLEY}}}}  
+[NONE ][23:26:02]      44 | [BOT]           | ? |     8 |   1361 |   133,  -780 | Sowy           
+[NONE ][23:26:02]      45 | [BOT]           | ? |     2 |     45 |  1612,  1208 | GÜŠTAVÖ        
+[NONE ][23:26:02]      46 | [BOT]           | ? |     8 |    368 |   394,   331 | ☢优𝓒ℓαssy雅☢    
+[NONE ][23:26:02]      47 | [BOT]           | ? |    16 |  44860 |   -17,   131 | ⚔ƁᙈββŁΣßΛĻŽ༻Ɣ  
+[NONE ][23:26:02]      48 | [BOT]           | ? |     8 |    454 |   150,    33 | 計»𝔣𝔯𝔞𝔫𝔠𝔬煵
+[NONE ][23:26:02]      49 | 127.0.0.1       | 6 |     1 |  18734 | -2607, -6386 | {doge}         
+[NONE ][23:26:02]     362 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:26:02]     365 | 127.0.0.1       | 6 |     1 |     40 |  5660,  7039 | An unnamed cell
+[NONE ][23:26:05] >mass 365
+[WARN ][23:26:05] Please specify a valid number
+[NONE ][23:26:11] >mass 365 20000
+[NONE ][23:26:11] Set mass of An unnamed cell to 20000.000
+[NONE ][23:26:29] DISCONNECTED 127.0.0.1:49436, code: 1006, reason: "", name: "An unnamed cell"
+[NONE ][23:26:29] CONNECTED 127.0.0.1:49442, origin: "http://127.0.0.1:5500"
+[NONE ][23:26:30] DISCONNECTED 127.0.0.1:49442, code: 1001, reason: "", name: ""
+[NONE ][23:26:31] CONNECTED 127.0.0.1:49446, origin: "http://127.0.0.1:5500"
+[NONE ][23:26:57] DISCONNECTED 127.0.0.1:49446, code: 1001, reason: "", name: ""
+[NONE ][23:26:57] CONNECTED 127.0.0.1:49453, origin: "http://127.0.0.1:5500"
+[NONE ][23:27:13] DISCONNECTED 127.0.0.1:49453, code: 1006, reason: "", name: "An unnamed cell"
+[NONE ][23:27:13] CONNECTED 127.0.0.1:49461, origin: "http://127.0.0.1:5500"
+[NONE ][23:27:31] DISCONNECTED 127.0.0.1:49461, code: 1006, reason: "", name: "An unnamed cell"
+[NONE ][23:27:31] CONNECTED 127.0.0.1:49467, origin: "http://127.0.0.1:5500"
+[NONE ][23:27:42] DISCONNECTED 127.0.0.1:49467, code: 1001, reason: "", name: ""
+[NONE ][23:27:42] CONNECTED 127.0.0.1:49472, origin: "http://127.0.0.1:5500"
+[NONE ][23:27:57] DISCONNECTED 127.0.0.1:49472, code: 1001, reason: "", name: "An unnamed cell"
+[NONE ][23:27:57] CONNECTED 127.0.0.1:49479, origin: "http://127.0.0.1:5500"
+[NONE ][23:28:49] >playerlist
+[NONE ][23:28:49] 
+Current players: 318
+[NONE ][23:28:49] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:28:49]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:28:49] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:28:49]      34 | [BOT]           | ? |     8 |    416 |  -792,   604 | 💕─ LϋJi ─💖   
+[NONE ][23:28:49]      35 | [BOT]           | ? |     9 |   1478 |  -592,  -330 | che            
+[NONE ][23:28:49]      36 | [BOT]           | ? |     8 |    668 |    93,  -874 | Ultra-[???]    
+[NONE ][23:28:49]      37 | [BOT]           | ? |     8 |    173 |   201,  -880 | 【Řβ】 Ruβιηh⊕🔫 
+[NONE ][23:28:49]      38 | [BOT]           | ? |     6 |    151 |   511,   496 | El kevin       
+[NONE ][23:28:49]      39 | [BOT]           | ? |     4 |    115 |    76, -1760 | ζ͜͡҈Šȶ༻ℱlŁᗰŻỖήᗴ
+[NONE ][23:28:49]      40 | [BOT]           | ? |     3 |     78 |  -952,  1616 | [ MG ] kaden   
+[NONE ][23:28:50]      41 | [BOT]           | ? |    10 |   5010 |  -139,   296 | ღℱℛᵀᴹ--༺𝓢pooky
+[NONE ][23:28:50]      42 | [BOT]           | ? |    11 |   5712 |   348,   -49 | 🈯Basic        
+[NONE ][23:28:50]      43 | [BOT]           | ? |    16 |  10273 |  -328,  -103 | {{{{ASLEY}}}}  
+[NONE ][23:28:50]      44 | [BOT]           | ? |     6 |   9896 |   302,  -995 | Sowy           
+[NONE ][23:28:50]      45 | [BOT]           | ? |     8 |   1447 |  -597,  -452 | GÜŠTAVÖ        
+[NONE ][23:28:50]      46 | [BOT]           | ? |    10 |   1385 |   356,   209 | ☢优𝓒ℓαssy雅☢    
+[NONE ][23:28:50]      47 | [BOT]           | ? |     7 |  35344 |   133,  -346 | ⚔ƁᙈββŁΣßΛĻŽ༻Ɣ  
+[NONE ][23:28:50]      48 | [BOT]           | ? |     8 |    214 |  -310,  -102 | 計»𝔣𝔯𝔞𝔫𝔠𝔬煵
+[NONE ][23:28:50]      49 | 127.0.0.1       | 6 |     1 |  17040 | -2607, -6418 | {doge}         
+[NONE ][23:28:50]     362 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:28:50]     372 | 127.0.0.1       | 6 |     1 |     50 | -1486,  5094 | An unnamed cell
+[NONE ][23:28:52] >mass 372 10000
+[NONE ][23:28:52] Set mass of An unnamed cell to 10000.000
+[NONE ][23:28:58] >minion 372 150
+[NONE ][23:28:58] Added 150 minions for An unnamed cell
+[NONE ][23:30:06] >help
+[NONE ][23:30:06]                        ┌────────────────────────────┐                       
+                       │ LIST OF AVAILABLE COMMANDS │                       
+┌──────────────────────┴────────────────────────────┴──────────────────────┐
+│                         ----Players and AI----                           │
+│                                                                          │
+│ playerlist                   │ Get list of players, bots, ID's, etc      │
+│ minion [PlayerID] [#] [name] │ Adds suicide minions to the server        │
+│ addbot [number]              │ Adds bots to the server                   │
+│ kickbot [number]             │ Kick a number of bots - No value= all gone│
+│ kick [PlayerID]              │ Kick player or bot by client ID           │
+│ kickall                      │ Kick all players and bots                 │
+│ kill [PlayerID]              │ Kill the player by client ID              │
+│ killall                      │ Kills everyone                            │
+│                                                                          │
+│                          ----Player Commands----                         │
+│                                                                          │
+│ spawn [entity] [pos] [mass]  │ Spawns an entity                          │
+│ mass [PlayerID] [mass]       │ Set cell(s) mass by client ID             │
+│ merge [PlayerID]             │ Merge all client's cells                  │
+│ spawnmass [PlayerID] [mass]  │ Sets a player's spawn mass                │
+│ freeze [PlayerID]            │ Freezes a player                          │
+│ speed [PlayerID]             │ Sets a player's base speed                │
+│ color [PlayerID] [R] [G] [B] │ Set cell(s) color by client ID            │
+│ name [PlayerID] [name]       │ Change cell(s) name by client ID          │
+│ skin [PlayerID] [string]     │ Change cell(s) skin by client ID          │
+│ rec [PlayerID]               │ Gives a player instant-recombine + more   │
+│ split [PlayerID] [Amount]    │ Forces a player to split                  │
+│ tp [X] [Y]                   │ Teleports player(s) to XY coordinates     │
+│ replace [PlayerID] [entity]  │ Replaces a player with an entity          │
+│ pop [PlayerID]               │ Pops a player with a virus                │
+| explode [PlayerID]           | Explodes a player into ejected mass       |
+│                                                                          │
+│                          ----Server Commands----                         │
+│                                                                          │
+│ pause                        │ Pause game, freeze all nodes              │
+│ board [string] [string] ...  │ Set scoreboard text                       │
+│ change [setting] [value]     │ Change specified settings                 │
+│ reload                       │ Reload config, banlist, and role files    │
+│ ban [PlayerID │ IP]          │ Bans a player(s) IP                       │
+│ unban [IP]                   │ Unbans an IP                              │
+│ banlist                      │ Get list of banned IPs.                   │
+│ mute [PlayerID]              │ Mute player from chat by client ID        │
+│ unmute [PlayerID]            │ Unmute player from chat by client ID      │
+| lms                          | Starts/ends last man standing             |
+| chat                         | Sends a server message to all clients     |
+│                                                                          │
+│                          ----Miscellaneous----                           │
+│                                                                          │
+│ clear                        │ Clear console output                      │
+│ reset                        │ Removes all nodes and reimplement them    │
+│ status                       │ Get server status                         │
+│ debug                        │ Get/check node lengths                    │
+│ exit                         │ Stops the server                          │
+│ calc                         │ Get size/mass from a specified value      │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│         Psst! Do "shortcuts" for a list of command shortcuts!            │
+└──────────────────────────────────────────────────────────────────────────┘
+[NONE ][23:30:08] >reset
+[WARN ][23:30:08] Removed 1387 nodes
+[NONE ][23:30:25] DISCONNECTED 127.0.0.1:49417, code: 1001, reason: "", name: ""
+[NONE ][23:30:51] CONNECTED 127.0.0.1:49503, origin: "http://cigar2.glitch.me"
+[NONE ][23:30:53] >kickall
+[NONE ][23:30:53] Kicked "💕─ LϋJi ─💖"
+[NONE ][23:30:53] Kicked "che"
+[NONE ][23:30:53] Kicked "Ultra-[???]"
+[NONE ][23:30:53] Kicked "【Řβ】 Ruβιηh⊕🔫"
+[NONE ][23:30:53] Kicked "El kevin"
+[NONE ][23:30:53] Kicked "ζ͜͡҈Šȶ༻ℱlŁᗰŻỖήᗴ"
+[NONE ][23:30:53] Kicked "[ MG ] kaden"
+[NONE ][23:30:53] Kicked "ღℱℛᵀᴹ--༺𝓢pooky"
+[NONE ][23:30:53] Kicked "🈯Basic"
+[NONE ][23:30:53] Kicked "{{{{ASLEY}}}}"
+[NONE ][23:30:53] Kicked "Sowy"
+[NONE ][23:30:53] Kicked "GÜŠTAVÖ"
+[NONE ][23:30:53] Kicked "☢优𝓒ℓαssy雅☢"
+[NONE ][23:30:53] Kicked "⚔ƁᙈββŁΣßΛĻŽ༻Ɣ"
+[NONE ][23:30:53] Kicked "計»𝔣𝔯𝔞𝔫𝔠𝔬煵"
+[NONE ][23:30:53] Kicked "{doge}"
+[NONE ][23:30:53] DISCONNECTED 127.0.0.1:65437, code: 1006, reason: "", name: "{doge}"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:53] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:54] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "An unnamed cell"
+[NONE ][23:30:55] DISCONNECTED 127.0.0.1:49479, code: 1006, reason: "", name: "An unnamed cell"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "minion"
+[NONE ][23:30:55] Kicked "An unnamed cell"
+[NONE ][23:30:55] DISCONNECTED 127.0.0.1:49503, code: 1006, reason: "", name: ""
+[NONE ][23:30:55] DISCONNECTED 127.0.0.1:49479, code: 1006, reason: "", name: "An unnamed cell"
+[NONE ][23:30:55] DISCONNECTED 127.0.0.1:65437, code: 1006, reason: "", name: "{doge}"
+[NONE ][23:30:55] DISCONNECTED 127.0.0.1:49503, code: 1006, reason: "", name: ""
+[NONE ][23:30:55] CONNECTED 127.0.0.1:49505, origin: "http://cigar2.glitch.me"
+[NONE ][23:30:57] CONNECTED 127.0.0.1:49508, origin: "http://cigar2.glitch.me"
+[NONE ][23:30:57] CONNECTED 127.0.0.1:49510, origin: "http://127.0.0.1:5500"
+[NONE ][23:31:00] DISCONNECTED 127.0.0.1:49510, code: 1001, reason: "", name: ""
+[NONE ][23:31:05] >clear
+[NONE ][23:31:05]   __  __       _ _   _  ___                        _____    _ _ _           _    _   __    _ 
+ |  \/  |_   _| | |_(_)/ _ \  __ _  __ _ _ __     | ____|__| (_) |_ ___  __| |  / | / /_  / |
+ | |\/| | | | | | __| | | | |/ _` |/ _` | '__|____|  _| / _` | | __/ _ \/ _` |  | || '_ \ | |
+ | |  | | |_| | | |_| | |_| | (_| | (_| | | |_____| |__| (_| | | ||  __/ (_| |  | || (_) || |
+ |_|  |_|\__,_|_|\__|_|\___/ \__, |\__,_|_|       |_____\__,_|_|\__\___|\__,_|  |_(_)___(_)_|
+                             |___/                                                           
+[INFO ][23:31:05] [1m[32mMultiOgar-Edited 1.6.1[37m - An open source multi-protocol ogar server[0m
+[INFO ][23:31:05] Listening on port 443
+[INFO ][23:31:05] Current game mode is Free For All
+
+[NONE ][23:31:07] >playerlist
+[NONE ][23:31:07] 
+Current players: 2
+[NONE ][23:31:07] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:31:07]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:31:07] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:31:07]     524 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:31:07]     525 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:31:11] >kickall
+[NONE ][23:31:11] Kicked "An unnamed cell"
+[NONE ][23:31:11] DISCONNECTED 127.0.0.1:49505, code: 1006, reason: "", name: ""
+[NONE ][23:31:11] Kicked "An unnamed cell"
+[NONE ][23:31:11] DISCONNECTED 127.0.0.1:49508, code: 1006, reason: "", name: ""
+[NONE ][23:31:11] DISCONNECTED 127.0.0.1:49508, code: 1006, reason: "", name: ""
+[NONE ][23:31:11] DISCONNECTED 127.0.0.1:49505, code: 1006, reason: "", name: ""
+[NONE ][23:31:13] CONNECTED 127.0.0.1:49514, origin: "http://cigar2.glitch.me"
+[NONE ][23:31:14] CONNECTED 127.0.0.1:49516, origin: "http://cigar2.glitch.me"
+[NONE ][23:31:17] >playerlist
+[NONE ][23:31:17] 
+Current players: 2
+[NONE ][23:31:17] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:31:17]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:31:17] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:31:17]     527 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:31:17]     528 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:31:36] >playerlist
+[NONE ][23:31:36] 
+Current players: 2
+[NONE ][23:31:36] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:31:36]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:31:36] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:31:36]     527 | 127.0.0.1       | 6 |     1 |     13 |  -522,  5626 | An unnamed cell
+[NONE ][23:31:36]     528 | 127.0.0.1       | 6 | ----------------------------DEAD OR NOT PLAYING
+[NONE ][23:31:42] >mass 527 10000
+[NONE ][23:31:42] Set mass of An unnamed cell to 10000.000
+[NONE ][23:31:48] >minion 527 1000
+[NONE ][23:31:48] Added 1000 minions for An unnamed cell
+[NONE ][23:34:10] DISCONNECTED 127.0.0.1:49514, code: 1001, reason: "", name: "An unnamed cell"
+[NONE ][23:34:25] DISCONNECTED 127.0.0.1:49516, code: 1006, reason: "", name: ""
+[NONE ][23:34:31] >kickall
+[WARN ][23:34:31] No players to kick!
+[NONE ][23:34:38] >reset
+[WARN ][23:34:38] Removed 1050 nodes
+[NONE ][23:38:57] CONNECTED 127.0.0.1:49447, origin: "http://localhost:8080"
+[NONE ][23:39:06] >playerlist
+[NONE ][23:39:06] 
+Current players: 1
+[NONE ][23:39:06] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][23:39:06]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][23:39:06] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][23:39:06]    1529 | 127.0.0.1       | 6 |     1 |     14 |  -438,   987 | An unnamed cell
+[NONE ][23:39:11] >mass 1529 10000
+[NONE ][23:39:11] Set mass of An unnamed cell to 10000.000
+[NONE ][23:39:16] >minion 1529 150
+[NONE ][23:39:16] Added 150 minions for An unnamed cell
+[NONE ][23:40:00] DISCONNECTED 127.0.0.1:49447, code: 1001, reason: "", name: "An unnamed cell"

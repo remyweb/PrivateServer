@@ -1,0 +1,151 @@
+=== Started 2022-05-07T12-34-11-792 ===
+[INFO ][12:34:11] 418 bad words loaded
+[WARN ][12:34:11] User account "Local Administrator" disabled
+[WARN ][12:34:11] User account "Local Moderator" disabled
+[WARN ][12:34:11] User account "Local User" disabled
+[WARN ][12:34:11] Unknown user role: George
+[INFO ][12:34:11] 1 user records loaded.
+[INFO ][12:34:11] 1 IP ban records loaded.
+[INFO ][12:34:11] [1m[32mMultiOgar-Edited 1.6.1[37m - An open source multi-protocol ogar server[0m
+[INFO ][12:34:11] WebSocket: ws
+[INFO ][12:34:11] Started stats server on port 88
+[INFO ][12:34:11] Listening on port 443
+[INFO ][12:34:11] Current game mode is Free For All
+[NONE ][12:34:12]   __  __       _ _   _  ___                        _____    _ _ _           _    _   __    _ 
+ |  \/  |_   _| | |_(_)/ _ \  __ _  __ _ _ __     | ____|__| (_) |_ ___  __| |  / | / /_  / |
+ | |\/| | | | | | __| | | | |/ _` |/ _` | '__|____|  _| / _` | | __/ _ \/ _` |  | || '_ \ | |
+ | |  | | |_| | | |_| | |_| | (_| | (_| | | |_____| |__| (_| | | ||  __/ (_| |  | || (_) || |
+ |_|  |_|\__,_|_|\__|_|\___/ \__, |\__,_|_|       |_____\__,_|_|\__\___|\__,_|  |_(_)___(_)_|
+                             |___/                                                           
+[NONE ][12:34:39] CONNECTED 127.0.0.1:54916, origin: "http://cigar2.glitch.me"
+[NONE ][12:35:10] >playerlist
+[NONE ][12:35:10] 
+Current players: 2
+[NONE ][12:35:10] Do "playerlist m" or "pl m" to list minions
+
+[NONE ][12:35:10]  ID     | IP              | P | CELLS | SCORE  |   POSITION   | NICK            
+[NONE ][12:35:10] ────────────────────────────────────────────────────────────────────────────────
+[NONE ][12:35:10]       1 | 127.0.0.1       | 6 |     1 |   1198 | -4972,  1969 | Spenlexxxxxxxxx
+[NONE ][12:35:13] >mass 1 25000
+[NONE ][12:35:13] Set mass of Spenlexxxxxxxxx to 25000.000
+[NONE ][12:38:49] >help
+[NONE ][12:38:49]                        ┌────────────────────────────┐                       
+                       │ LIST OF AVAILABLE COMMANDS │                       
+┌──────────────────────┴────────────────────────────┴──────────────────────┐
+│                         ----Players and AI----                           │
+│                                                                          │
+│ playerlist                   │ Get list of players, bots, ID's, etc      │
+│ minion [PlayerID] [#] [name] │ Adds suicide minions to the server        │
+│ addbot [number]              │ Adds bots to the server                   │
+│ kickbot [number]             │ Kick a number of bots - No value= all gone│
+│ kick [PlayerID]              │ Kick player or bot by client ID           │
+│ kickall                      │ Kick all players and bots                 │
+│ kill [PlayerID]              │ Kill the player by client ID              │
+│ killall                      │ Kills everyone                            │
+│                                                                          │
+│                          ----Player Commands----                         │
+│                                                                          │
+│ spawn [entity] [pos] [mass]  │ Spawns an entity                          │
+│ mass [PlayerID] [mass]       │ Set cell(s) mass by client ID             │
+│ merge [PlayerID]             │ Merge all client's cells                  │
+│ spawnmass [PlayerID] [mass]  │ Sets a player's spawn mass                │
+│ freeze [PlayerID]            │ Freezes a player                          │
+│ speed [PlayerID]             │ Sets a player's base speed                │
+│ color [PlayerID] [R] [G] [B] │ Set cell(s) color by client ID            │
+│ name [PlayerID] [name]       │ Change cell(s) name by client ID          │
+│ skin [PlayerID] [string]     │ Change cell(s) skin by client ID          │
+│ rec [PlayerID]               │ Gives a player instant-recombine + more   │
+│ split [PlayerID] [Amount]    │ Forces a player to split                  │
+│ tp [X] [Y]                   │ Teleports player(s) to XY coordinates     │
+│ replace [PlayerID] [entity]  │ Replaces a player with an entity          │
+│ pop [PlayerID]               │ Pops a player with a virus                │
+| explode [PlayerID]           | Explodes a player into ejected mass       |
+│                                                                          │
+│                          ----Server Commands----                         │
+│                                                                          │
+│ pause                        │ Pause game, freeze all nodes              │
+│ board [string] [string] ...  │ Set scoreboard text                       │
+│ change [setting] [value]     │ Change specified settings                 │
+│ reload                       │ Reload config, banlist, and role files    │
+│ ban [PlayerID │ IP]          │ Bans a player(s) IP                       │
+│ unban [IP]                   │ Unbans an IP                              │
+│ banlist                      │ Get list of banned IPs.                   │
+│ mute [PlayerID]              │ Mute player from chat by client ID        │
+│ unmute [PlayerID]            │ Unmute player from chat by client ID      │
+| lms                          | Starts/ends last man standing             |
+| chat                         | Sends a server message to all clients     |
+│                                                                          │
+│                          ----Miscellaneous----                           │
+│                                                                          │
+│ clear                        │ Clear console output                      │
+│ reset                        │ Removes all nodes and reimplement them    │
+│ status                       │ Get server status                         │
+│ debug                        │ Get/check node lengths                    │
+│ exit                         │ Stops the server                          │
+│ calc                         │ Get size/mass from a specified value      │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│         Psst! Do "shortcuts" for a list of command shortcuts!            │
+└──────────────────────────────────────────────────────────────────────────┘
+[NONE ][12:39:06] >addbot 16
+[NONE ][12:39:06] Added 16 player bots
+[NONE ][12:39:31] >minion 1 1 Lay uWu
+[NONE ][12:39:31] Added 1 minions for Spenlexxxxxxxxx
+[NONE ][12:50:41] >mass 1 15000
+[NONE ][12:50:41] Set mass of {doge}El giorgi to 15000.000
+[NONE ][12:59:16] DISCONNECTED 127.0.0.1:54916, code: 1001, reason: "", name: "{doge}El giorgi"
+[NONE ][13:07:36] CONNECTED 127.0.0.1:55127, origin: "http://127.0.0.1:5500"
+[NONE ][13:08:19] CONNECTED 127.0.0.1:55150, origin: "http://cigar2.glitch.me"
+[NONE ][13:08:34] DISCONNECTED 127.0.0.1:55150, code: 1001, reason: "", name: ""
+[NONE ][13:09:45] DISCONNECTED 127.0.0.1:55127, code: 1001, reason: "", name: ""
+[NONE ][13:09:46] CONNECTED 127.0.0.1:55160, origin: "http://127.0.0.1:5500"
+[NONE ][13:10:10] DISCONNECTED 127.0.0.1:55160, code: 1001, reason: "", name: ""
+[NONE ][13:10:11] CONNECTED 127.0.0.1:55173, origin: "http://127.0.0.1:5500"
+[NONE ][13:10:20] DISCONNECTED 127.0.0.1:55173, code: 1001, reason: "", name: ""
+[NONE ][13:10:21] CONNECTED 127.0.0.1:55182, origin: "http://127.0.0.1:5500"
+[NONE ][13:10:29] DISCONNECTED 127.0.0.1:55182, code: 1001, reason: "", name: ""
+[NONE ][13:10:30] CONNECTED 127.0.0.1:55189, origin: "http://127.0.0.1:5500"
+[NONE ][13:10:58] DISCONNECTED 127.0.0.1:55189, code: 1006, reason: "", name: ""
+[NONE ][13:10:58] CONNECTED 127.0.0.1:55197, origin: "http://127.0.0.1:5500"
+[NONE ][13:11:10] DISCONNECTED 127.0.0.1:55197, code: 1006, reason: "", name: ""
+[NONE ][13:11:11] CONNECTED 127.0.0.1:55203, origin: "http://127.0.0.1:5500"
+[NONE ][13:11:28] DISCONNECTED 127.0.0.1:55203, code: 1006, reason: "", name: ""
+[NONE ][13:11:29] CONNECTED 127.0.0.1:55212, origin: "http://127.0.0.1:5500"
+[NONE ][13:11:49] DISCONNECTED 127.0.0.1:55212, code: 1001, reason: "", name: ""
+[NONE ][13:11:50] CONNECTED 127.0.0.1:55223, origin: "http://127.0.0.1:5500"
+[NONE ][13:11:59] DISCONNECTED 127.0.0.1:55223, code: 1001, reason: "", name: ""
+[NONE ][13:11:59] CONNECTED 127.0.0.1:55229, origin: "http://127.0.0.1:5500"
+[NONE ][13:12:53] DISCONNECTED 127.0.0.1:55229, code: 1001, reason: "", name: ""
+[NONE ][13:12:54] CONNECTED 127.0.0.1:55359, origin: "http://127.0.0.1:5500"
+[NONE ][13:13:08] DISCONNECTED 127.0.0.1:55359, code: 1006, reason: "", name: ""
+[NONE ][13:13:09] CONNECTED 127.0.0.1:55368, origin: "http://127.0.0.1:5500"
+[NONE ][13:13:21] DISCONNECTED 127.0.0.1:55368, code: 1006, reason: "", name: ""
+[NONE ][13:13:21] CONNECTED 127.0.0.1:55396, origin: "http://127.0.0.1:5500"
+[NONE ][13:13:32] DISCONNECTED 127.0.0.1:55396, code: 1001, reason: "", name: ""
+[NONE ][13:13:32] CONNECTED 127.0.0.1:55403, origin: "http://127.0.0.1:5500"
+[NONE ][13:13:52] DISCONNECTED 127.0.0.1:55403, code: 1001, reason: "", name: ""
+[NONE ][13:13:53] CONNECTED 127.0.0.1:55411, origin: "http://127.0.0.1:5500"
+[NONE ][13:14:02] DISCONNECTED 127.0.0.1:55411, code: 1001, reason: "", name: ""
+[NONE ][13:14:03] CONNECTED 127.0.0.1:55438, origin: "http://127.0.0.1:5500"
+[NONE ][13:15:16] DISCONNECTED 127.0.0.1:55438, code: 1006, reason: "", name: ""
+[NONE ][13:15:17] CONNECTED 127.0.0.1:55462, origin: "http://127.0.0.1:5500"
+[NONE ][13:20:11] DISCONNECTED 127.0.0.1:55462, code: 1006, reason: "", name: "a"
+[NONE ][13:20:12] CONNECTED 127.0.0.1:55497, origin: "http://127.0.0.1:5500"
+[NONE ][13:20:43] DISCONNECTED 127.0.0.1:55497, code: 1001, reason: "", name: ""
+[NONE ][13:20:44] CONNECTED 127.0.0.1:55502, origin: "http://127.0.0.1:5500"
+[NONE ][13:21:18] DISCONNECTED 127.0.0.1:55502, code: 1001, reason: "", name: "a"
+[NONE ][13:21:18] CONNECTED 127.0.0.1:55512, origin: "http://127.0.0.1:5500"
+[NONE ][13:21:40] DISCONNECTED 127.0.0.1:55512, code: 1006, reason: "", name: "a"
+[NONE ][13:21:41] CONNECTED 127.0.0.1:55517, origin: "http://127.0.0.1:5500"
+[NONE ][13:22:29] DISCONNECTED 127.0.0.1:55517, code: 1006, reason: "", name: "a"
+[NONE ][13:22:30] CONNECTED 127.0.0.1:55525, origin: "http://127.0.0.1:5500"
+[NONE ][13:23:30] DISCONNECTED 127.0.0.1:55525, code: 1001, reason: "", name: "a"
+[NONE ][13:23:30] CONNECTED 127.0.0.1:55532, origin: "http://127.0.0.1:5500"
+[NONE ][13:26:05] CONNECTED 127.0.0.1:55550, origin: "http://cigar2.glitch.me"
+[NONE ][13:26:44] DISCONNECTED 127.0.0.1:55532, code: 1006, reason: "", name: "a"
+[NONE ][13:26:44] CONNECTED 127.0.0.1:55575, origin: "http://127.0.0.1:5500"
+[NONE ][13:39:52] DISCONNECTED 127.0.0.1:55550, code: 1001, reason: "", name: "An unnamed cell"
+[NONE ][13:43:35] DISCONNECTED 127.0.0.1:55575, code: 1001, reason: "", name: "{8}a"
+[NONE ][13:43:35] CONNECTED 127.0.0.1:55634, origin: "http://127.0.0.1:5500"
+[NONE ][13:43:37] DISCONNECTED 127.0.0.1:55634, code: 1006, reason: "", name: ""
+[NONE ][13:43:38] CONNECTED 127.0.0.1:55638, origin: "http://127.0.0.1:5500"
