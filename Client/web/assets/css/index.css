@@ -19,8 +19,7 @@ input[type=checkbox] {
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/865/609/original/arttu-tuovinen-tunnel-loop-min.gif?1509013233);
-    background-color: rgba(10, 71, 107, 0.5);
+    background-color: rgba(107, 107, 107, 0.5);
     z-index: 200;
 }
 #connecting {
@@ -52,7 +51,7 @@ input[type=checkbox] {
 }
 #helloDialog {
     width: 700px;
-    background-color: rgb(35, 35, 35);
+    background-color:   rgba(20, 59, 85, 0.425);
     margin: 10px auto;
     border-radius: 15px;
     padding: 5px 15px 5px 15px;
