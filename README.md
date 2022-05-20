@@ -1,3 +1,8 @@
+# SREENSHOT 
+
+img src=".github/preview.png" alt="Server and Client running.">
+
+
 # OBSERVATIONS
 
 This is a clone made for using in 2022. You can find the original creator here: [Ogar](https://github.com/OgarProject/Ogar).
