@@ -1,4 +1,4 @@
-# SREENSHOT 📸
+# SCREENSHOT 📸
 ![Screenshot](https://github.com/GeorgeWanderson/PrivateServer/blob/main/Files/screenshot.png)
 
 
