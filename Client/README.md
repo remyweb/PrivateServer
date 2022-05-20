@@ -1,5 +1,7 @@
 
 
-### Getting started
+### LET'S START!
 
-`cd Client`, `npm i`, and `npm start`. Client will then start on `localhost:3000`.
+Follow this steps to run the client.
+
+> `CD Client`, `npm i`, and `npm start`. Client will then start on `localhost:3000`.
