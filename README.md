@@ -1,9 +1,8 @@
-# SREENSHOT 
+# SREENSHOT 📸
+![Screenshot](https://github.com/GeorgeWanderson/PrivateServer/blob/main/Files/screenshot.png)
 
-img src=".github/preview.png" alt="Server and Client running.">
 
-
-# OBSERVATIONS
+# OBSERVATIONS ⚠️
 
 This is a clone made for using in 2022. You can find the original creator here: [Ogar](https://github.com/OgarProject/Ogar).
 We made small updates in this repositorie for using bots and multiplayer server.
@@ -12,7 +11,7 @@ Read the description of client and server, thanks.
 
 >---
 
-# Information
+# Information 📃
 Current version : **1.6.1**
 
 ![Language](https://img.shields.io/badge/language-node.js-yellow.svg)
@@ -24,7 +23,7 @@ MultiOgar-Edited code however, is based on MultiOgar code that has been heavily 
 
 >---
 
-# Installation
+# Installation 💻
 ## Windows
 
 1. Download and install node.js: https://nodejs.org/en/download/
